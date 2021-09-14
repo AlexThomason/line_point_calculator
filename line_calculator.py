@@ -18,7 +18,12 @@ def y_intercept_calculator(point_tuple,slope):
     return y_intercept
 
 
+def y_point_calculator(slope,y_intercept,x_point_value):
+    y_point_value = slope * x_point_value + y_intercept
+    return y_point_value
+
 
 if __name__ == "__main__":
     y_point = line_calculator((0,2),(2,6), 2)
+    print(y_point)
 
